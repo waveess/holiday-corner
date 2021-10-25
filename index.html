@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "./style.css">
+    <title>Holiday Corner</title>
+</head>
+<body>
+    
+    <nav>
+        <h1>Holiday Corner</h1>
+        <ul>
+            <li><a href="#coco">The Coco</a></li>
+            <li><a href="#mission">Our Mission</a></li>
+            <li><a href="#beans">Our Chocolate</a></li>
+            <li><a href="#shop">Our Shop</a></li>
+            <li><a href="#contact-us">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section class="section section--intro">
+        <svg class="logo"></svg>
+        <p class="intro__text"></p>
+    </section>
+
+    <section class="section section--coco">
+        <h2 class="section__title">The Coco</h2>
+        <p>Keeping the holidays spirit alive and taming those winter shivers, we present our take on everybody's favorite winter drink; 'Hot Chocolate'!</p>
+    <div class="grid-carousel">
+        <!-- carousel-item 1 -->
+        <figure class = "grid-carousel__item">
+            <img src = "./images/coco-4.jpg" class = grid-carousel__image>
+            <figcaption class = "grid-carousel__caption">
+                <h3 class="grid-carousel__title">Classic</h3>
+                <p class="grid-carousel__description">A classic warm cup of hot coco, sprinkled with coco powder.</p>
+            </figcaption>
+        </figure>
+
+        <!-- carousel-item 2 -->
+        <figure class = "grid-carousel__item">
+            <img src = "./images/coco-2.jpg"class = grid-carousel__image>
+            <figcaption class = "grid-carousel__caption">
+                <h3 class="grid-carousel__title">Double Chocolate</h3>
+                <p class="grid-carousel__description">A twist on the classic with chocolate whipped cream served on top.</p>
+            </figcaption>
+        </figure>
+
+        <!-- carousel-item 3 -->
+        <figure class = "grid-carousel__item">
+            <img src = "./images/coco-5.jpg" class = grid-carousel__image>
+            <figcaption class = "grid-carousel__caption">
+                <h3 class="grid-carousel__title">Bring on the Marshmallows</h3>
+                <p class="grid-carousel__description">A simple cup of coco with an assortment of marshamllows of your choosing and a cinamon stick.</p>
+            </figcaption>
+        </figure>
+    </div>
+    </section>
+   
+    <section class="section section--mission">
+        <div class="card card--dark back">
+            <h2 class="section__title"></h2>
+            <p>Our mission is to keep the holiday spirit alive all year long. Whether it is christmas or not, anything tastes better with a cup of hot chocolate.
+            </p>
+            <a href="#" class="btn btn--light">Read More</a>
+        </div>
+        <img src="./images/mission.jpg" alt="cacao beans" class="front">
+    </section>
+    <section class="section section--beans">
+        <div class = "card card--dark front">
+         <h2 class="section__title"></h2>
+         <p>Our cacao beans are harvested from the heart of Colombia. Each bean is unique in its own way.
+         </p>
+         <p>The richness of the chocolate can be detected through each sip.</p>
+         <a href="#" class="btn btn--light">Find out more</a>
+         <img src = "./images/chef.jpg" alt = "chocolatier" class = "front">
+        </div>
+     </section>
+
+    <section class="section section--shop">
+        <div class="card card--dark white">
+            <h2 class="section__title">Our Shop</h2>
+            <p>Located in Evergreen, our small town shop is the place to be if you are a chocolate enthusiast and enjoy the warm holiday feeling all year long.</p>
+            <a href="#" class="btn btn--light">Read More</a>
+            <img src = "./images/shop.jpg" alt = "small town shop">
+        </div>
+    </section>
+
+    <section id = "#contact-us">
+        <div class = "form">
+            <h2>Got Questions?</h2>
+        <p>Reach out by filling out the form below!</p>
+        <form>
+            <label for="contact-name">Your Name</label>
+            <input type="text" id="contact-name" placeholder="Your Name" />
+
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" placeholder="Message"></textarea>
+          
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+    </section>
+
+    <footer>
+        <svg></svg>
+        <p> &copy; 2021 Holiday Corner.</p>
+    </footer>
+    
+</body>
+</html>
