@@ -1,97 +1,316 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" href = "./style.css">
-    <title>Holiday Corner</title>
-</head>
-<body>
-    
+    <head>
+        <link rel="stylesheet" href="./style.css" />
+        <link rel="stylesheet" href="./secondary.css" />
+        <meta charset="UT-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Holiday Corner</title>
+    </head>
+
+<!-- navigation -->
+<header>
+    <h1>
+        <a href="/">Holiday Corner</a>
+    </h1>
+
     <nav>
-        <h1>Holiday Corner</h1>
-        <ul>
-            <li><a href="#coco">The Coco</a></li>
-            <li><a href="#mission">Our Mission</a></li>
-            <li><a href="#beans">Our Chocolate</a></li>
-            <li><a href="#shop">Our Shop</a></li>
-            <li><a href="#contact-us">Contact Us</a></li>
-        </ul>
-    </nav>
-
-    <section class="section section--intro">
-        <svg class="logo"></svg>
-        <p class="intro__text"></p>
-    </section>
-
-    <section class="section section--coco">
-        <h2 class="section__title">The Coco</h2>
-        <p>Keeping the holidays spirit alive and taming those winter shivers, we present our take on everybody's favorite winter drink; 'Hot Chocolate'!</p>
-    <div class="grid-carousel">
-        <!-- carousel-item 1 -->
-        <figure class = "grid-carousel__item">
-            <img src = "./images/coco-4.jpg" class = grid-carousel__image>
-            <figcaption class = "grid-carousel__caption">
-                <h3 class="grid-carousel__title">Classic</h3>
-                <p class="grid-carousel__description">A classic warm cup of hot coco, sprinkled with coco powder.</p>
-            </figcaption>
-        </figure>
-
-        <!-- carousel-item 2 -->
-        <figure class = "grid-carousel__item">
-            <img src = "./images/coco-2.jpg"class = grid-carousel__image>
-            <figcaption class = "grid-carousel__caption">
-                <h3 class="grid-carousel__title">Double Chocolate</h3>
-                <p class="grid-carousel__description">A twist on the classic with chocolate whipped cream served on top.</p>
-            </figcaption>
-        </figure>
-
-        <!-- carousel-item 3 -->
-        <figure class = "grid-carousel__item">
-            <img src = "./images/coco-5.jpg" class = grid-carousel__image>
-            <figcaption class = "grid-carousel__caption">
-                <h3 class="grid-carousel__title">Bring on the Marshmallows</h3>
-                <p class="grid-carousel__description">A simple cup of coco with an assortment of marshamllows of your choosing and a cinamon stick.</p>
-            </figcaption>
-        </figure>
-    </div>
-    </section>
+    <!-- Undordered list elemenet -->
+    <ul>
+        <!-- Anchor element -->
+        <li>
+            <a href="#the-cocoa">The Cocoa</a>
+        </li>
+        <li>
+            <a href="#our-beans">Our Beans</a>
+        </li>
+        <li>
+            <a href="#our-shop">Our Shop</a>
+        </li>
+        <li>
+            <a href="#our-chefs">Our Chefs</a>
+        </li>
+        <li>
+            <a href="#reach-out">Reach Out</a>
+        </li>
+    </ul>
    
-    <section class="section section--mission">
-        <div class="card card--dark back">
-            <h2 class="section__title"></h2>
-            <p>Our mission is to keep the holiday spirit alive all year long. Whether it is christmas or not, anything tastes better with a cup of hot chocolate.
-            </p>
-            <a href="#" class="btn btn--light">Read More</a>
-        </div>
-        <img src="./images/mission.jpg" alt="cacao beans" class="front">
-    </section>
-    <section class="section section--beans">
-        <div class = "card card--dark front">
-         <h2 class="section__title"></h2>
-         <p>Our cacao beans are harvested from the heart of Colombia. Each bean is unique in its own way.
-         </p>
-         <p>The richness of the chocolate can be detected through each sip.</p>
-         <a href="#" class="btn btn--light">Find out more</a>
-         <img src = "./images/chef.jpg" alt = "chocolatier" class = "front">
-        </div>
-     </section>
+    </nav>
+</header>
 
-    <section class="section section--shop">
-        <div class="card card--dark white">
-            <h2 class="section__title">Our Shop</h2>
-            <p>Located in Evergreen, our small town shop is the place to be if you are a chocolate enthusiast and enjoy the warm holiday feeling all year long.</p>
-            <a href="#" class="btn btn--light">Read More</a>
-            <img src = "./images/shop.jpg" alt = "small town shop">
-        </div>
-    </section>
+<!-- hero section -->
+<section class="hero">
+    
+</section>
+<!-- end hero here-->   
 
-    <section id = "#contact-us">
-        <div class = "form">
-            <h2>Got Questions?</h2>
-        <p>Reach out by filling out the form below!</p>
-        <form>
+<!-- "what we do" section -->
+<section id="the-cocoa" class="intro">
+  <h2 class="section-title ">The Cocoa</h2>
+  <!-- carousel -->
+  <div class="carousel">
+    <button class="carousel__button carousel__button--left is-hidden">
+      <img src="https://img.icons8.com/material-rounded/30/000000/chevron-left.png"/>
+    </button>
+    <div class="carousel__track-container">
+      <ul class="carousel__track">
+
+        <li class="carousel__slide current-slide">
+          <img class = "carousel__image" src = "./images/first.jpg" alt = "">
+          
+        </li>
+
+        <!-- classic -->
+        <li class="carousel__slide">
+          <h1 >Classic</h1>
+          <p>A classic cup of cocoa topped with marshmallows!</p>
+           </li>
+           <li class = "carousel__slide">
+            <img class = "carousel__image" src = "./images/coco-8.jpg" alt = "">
+           </li>
+
+           <!-- Double Chocolate Blast -->
+           <li class="carousel__slide">
+            <h1 >Double Chocolate Blast</h1>
+           <p> A warm cup of cocoa, topped with chocolate whipped cream makes this a 
+            perfect treat for chocolate lovers!</p>
+             </li>
+           <li class="carousel__slide">
+          <img class = "carousel__image" src = "./images/coco-2.jpg" alt = "">
+          
+        </li>
+       
+        <!-- Salted Caramel -->
+        <li class="carousel__slide">
+          <h1 >Salted Caramel</h1>
+          <p>Our classic hot chocolate, drizzled with slated caramel sauce.</p>
+           </li>
+        <li class="carousel__slide">
+          <img class = "carousel__image" src = "./images/coco-4.jpg" alt = "">
+          
+        </li>
+        
+      </ul>
+    </div>
+    <button class="carousel__button carousel__button--right">
+      <img src="https://img.icons8.com/ios-glyphs/30/000000/chevron-right.png"/>
+    </button>
+    <div class="carousel__nav">
+      <button class="carousel__indicator current-slide"></button>
+      <button class="carousel__indicator"></button>
+      <button class="carousel__indicator"></button>
+      <button class="carousel__indicator"></button>
+      <button class="carousel__indicator"></button>
+      <button class="carousel__indicator"></button>
+      <button class="carousel__indicator"></button>
+    </div>
+  </div>
+  </section>
+
+<!-- "what you do" section -->
+<section id="our-beans" class="steps">
+  <div class="flex-row">
+    <h2 class="section-title secondary-border">What You Do</h2>
+  </div>
+
+    <div class="step">
+      <h3>Step 1:</h3>
+        <div class="step-info">
+          <div class="step-img">
+            <img src="./assets/images/step-1.svg" alt="" />
+          </div>
+          <div class="step-text">
+            <h4>Fill Out the Form Above.</h4>
+            <p>You're already here, so why not?</p>
+          </div>
+        </div>
+    </div>
+
+    <div class="step">
+      <h3>Step 2:</h3>
+        <div class="step-info">
+          <div class="step-img">
+            <img src="./assets/images/step-2.svg" alt="" />
+          </div>
+          <div class="step-text">
+            <h4>Consult with One of Our Trainers.</h4>
+            <p>Are you here to build muscle, lose weight, or just feel good?</p>
+          </div>
+        </div>
+    </div>
+
+    <div class="step">
+      <h3>Step 3:</h3>
+        <div class="step-info">
+          <div class="step-img">
+            <img src="./assets/images/step-3.svg" alt="" />
+          </div>
+          <div class="step-text">
+            <h4>Get Running.</h4>
+             <p>Hit the ground running (literally) once your trainer lays out  your plan</p>
+          </div> 
+        </div>
+    </div>
+
+    <div class="step">
+      <h3>Step 4:</h3>
+        <div class="step-info">
+          <div class="step-img">
+            <img src="./assets/images/step-4.svg" alt="" />
+          </div> 
+          <div class="step-text">
+            <h4>See Results.</h4>
+            <p>Bi-weekly checkins with your trainer will keep you focused</p>
+          </div>
+        </div>
+    </div>
+</section>
+
+<!-- "meet the trainers" section -->
+<section id="our-shop">
+  <div class="flex-row">
+    <h2 class="section-title primary-border">Meet The Trainers</h2>
+  </div>
+
+  <!-- first trainer bio -->
+  <div class="flex-row">
+  <div class="trainers">
+
+    <span class="trainer-img">
+    <article class="trainer">
+    <div class="trainer-img trainer-1">
+      <div>
+        <h3>Arron Stephens</h3>
+        <h4>Speed / Strength</h4>
+      </div>
+    </div>
+      <div class="trainer-bio">
+        <p>
+         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saepe culpa sed
+         itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!
+       </p>
+     </div>
+    </article>
+
+<!-- second trainer bio -->
+    <article class="trainer">
+    <div class="trainer-img trainer-2">
+      <div>
+       <h3>Joanna Gill</h3>
+        <h4>Endurance</h4>
+      </div>
+    </div>
+      <div class="trainer-bio">
+       <p>
+         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saepe culpa sed
+         itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!
+       </p>
+     </div>
+    </article>
+  
+<!-- third trainer bio -->
+    <article class="trainer">
+      <div class="trainer-img trainer-3">
+        <div> 
+       <h3>Harry "the Headband" Smith</h3>
+       <h4>Strength</h4>
+        </div>
+      </div>
+        <div class="trainer-bio">
+       <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saepe culpa sed
+          itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!
+       </p>
+      </div>
+    </article>
+  </span>
+  </div>
+  </div>
+
+</section>
+
+<!--"service plans" section-->
+
+<section id="our-chefs" class="services">
+
+  <h2 class="section-title secondary-border">
+    Our Service Plans 
+  </h2>
+
+  <div class="service-grid-wrapper">
+    <div class="service-grid-container">
+
+      <!--Headers-->
+      <div class="service-grid-item grid-head basic">
+        Basic
+      </div>
+      <div class="service-grid-item grid-head premium">
+        Premium
+      </div>
+
+      <!--Body-->
+      <div class="service-grid-item basic">
+        Support Offered Between 9-5
+      </div>
+      <div class="service-grid-item premium">
+        24/7 Plan Support
+      </div>
+      <div class="service-grid-item basic">
+        Bi-Weekly Trainer Calls
+      </div>
+      <div class="service-grid-item premium">
+        Weekly Trainer Calls
+      </div>
+      <div class="service-grid-item basic">
+        N/A
+      </div>
+      <div class="service-grid-item premium">
+        Discounts At Select Running Stores
+      </div>
+      <div class="service-grid-item both">
+        Subscription to Run Buddy's Health Magazine!
+      </div>
+      <div class="service-grid-item grid-price basic">
+        $10/mo
+      </div>
+      <div class="service-grid-item grid-price premium">
+        $25/mo
+      </div>
+      <div class="service-grid-item cancel">
+        Cancel At Any Time!
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
+<!-- "reach out" section -->
+    <section id="reach-out" class="contact">
+      <div class="flex-row">
+        <h2 class="section-title secondary-border">Reach Out</h2>
+      </div>
+
+      <div class="contact-info">
+        <div>
+          <h3>Run Buddy</h3>
+          <p>
+            Any questions or concerns before signing up?
+            <br />
+            Let us know and we'll be happy to talk to you!
+          </p>
+          <address>
+            55 Main Street <br/>
+            Some Town, Ca <br/>
+            12345<br />
+            P: 555.RUN.BUDZ (555.786.2839)<br/>
+            E: <a href="mailto:info@runbuddy.io">info@runbuddy.io</a>
+          </address>
+        </div> 
+
+        <div class="contact-form">
+          <h3>Contact Us</h3>
+          <form>
             <label for="contact-name">Your Name</label>
             <input type="text" id="contact-name" placeholder="Your Name" />
 
@@ -101,12 +320,24 @@
             <button type="submit">Submit</button>
           </form>
         </div>
-    </section>
 
-    <footer>
-        <svg></svg>
-        <p> &copy; 2021 Holiday Corner.</p>
-    </footer>
     
-</body>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12182.30520634488!2d-74.0652613!3d40.2407219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1561060983193!5m2!1sen!2sus"
+          frameborder="0"
+          style="border:0"
+          allowfullscreen>
+        </iframe>
+      </div>
+</section>
+
+<!-- footer -->
+<footer>
+    <h2>❤️ Made with love by Run Buddy.</h2>
+    <div>
+        <a href="#">Read Our Privacy Policy</a><br />
+        &copy; 2019 Run Buddy, Inc.
+    </div>
+</footer>
+<script src = "./script.js"></script>
 </html>
